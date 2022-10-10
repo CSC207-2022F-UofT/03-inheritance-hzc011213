@@ -5,46 +5,41 @@
  * 1. Introduction to Java helpful.
  */
 
+import java.util.ArrayList;
+
 public abstract class Bag {
-    /*
-     * TODO: Create the following private instance variables
-     *       - a String named color
-     *       - an int named numberOfContents
-     *       - an int named capacity
-     *       - an array of Strings named contents
-     */
+
+    public String color;
+    public int numberOfContents;
+    public int capacity;
+    public ArrayList<String> contents = new ArrayList<String>();
 
 
 
-
-    /*
-     * TODO: Create a constructor that takes two arguments:
-     *       - a String representing the Bag's colour
-     *       - an int representing the Bag's capacity
-     *
-     * The other attributes (private instance variables) should
-     * be empty (e.g. numberOfContents is 0 and an empty String array for
-     * its contents.)
-     */
+    public Bag(String color, int capacity) {
+        this.color = color;
+        this.capacity = capacity;
+    }
 
 
 
+    public String getColor() {
+        return this.color;
+    }
 
-    /*
-     * TODO: Create a variety of 'getter' functions.
-     *       These should be named:
-     *           - getColor
-     *           - getNumberOfContents
-     *           - getCapacity
-     */
+    public int getNumberOfContents() {
+        return this.numberOfContents;
+    }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
 
 
 
-
-    /*
-     * TODO: Create a setter function called setColor which sets the
-     *       color of this bag to the given color.
-     */
+    public void setColor(String color) {
+        this.color = color;
+    }
 
 
 
